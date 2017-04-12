@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 require "connection.php";
 session_start();
 
@@ -14,7 +15,7 @@ session_start();
     $_SESSION['owner_email'] = $email;
     echo "<script>window.location.href='home.html';</script>";
   }else{
-    echo '<div class="alert alert-danger" role="alert"><i class="fa fa-user-plus" aria-hidden="true"></i> LOgin Details Invalid </div>';
+    echo '<div class="alert alert-danger" role="alert"><i class="fa fa-user-plus"></i> LOgin Details Invalid </div>';
   }
 
 
