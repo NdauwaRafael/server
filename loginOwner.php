@@ -3,7 +3,6 @@ header("Access-Control-Allow-Origin: *");
 require "connection.php";
 session_start();
 
-
  if ($_POST) {
   $email = $_POST['email'];
   $password = $_POST['password'];
