@@ -1,4 +1,4 @@
 <?php
-
- $dbc = mysqli_connect('localhost','root','pass123','cars');
+header("Access-Control-Allow-Origin: *");
+ $dbc = mysqli_connect('localhost','root','','cars');
  ?>
