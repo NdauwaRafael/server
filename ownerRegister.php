@@ -10,7 +10,7 @@ session_start();
    $password = $_POST['password'];
    $cpassword = $_POST['cpassword'];
 
-   $queri = "INSERT INTO `ownermembership`(`id`, `idno`, `firstname`, `lastname`, `email`, `password`) VALUES (NULL,'$idno','$fname','$lname','$email','$password')";
+   $queri = "INSERT INTO `ownermembership`(`owner_id`, `idno`, `firstname`, `lastname`, `email`, `password`) VALUES (NULL,'$idno','$fname','$lname','$email','$password')";
    if (mysqli_query($dbc, $queri)) {
      echo "$fname $lname User was added successfully!!";
      $_SESSION['owner_email'] = $email;
